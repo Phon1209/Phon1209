@@ -22,7 +22,8 @@ export const UIStrings = {
 
     // common
     "common.name": "Patiphon Loetsuthakun",
-    "common.short-bio": "bio",
+    "common.short-bio":
+      "I’m a Student studying Information Science and Computer Science. I have an interest in web interfaces and accessibility, and I want to promote web accessibility for people who are often left behind.",
     "common.loading": "Loading...",
     "common.write-by": "Written by {name}",
     "common.back-to-top": "Back to top",

@@ -2,6 +2,8 @@
 import { getLanguageFromURL, useMetadata } from "@/utils/uiTranslation";
 import BaseHead from "../components/base/BaseHeading.astro";
 import { ClientRouter } from "astro:transitions";
+import Footer from "@/components/common/Footer.astro";
+import Nav from "@/components/common/Nav.astro";
 
 export type Meta = {
   title: string;
@@ -29,5 +31,29 @@ const image = metaTranslation("ogImage");
     <BaseHead {title} {description} {image} />
     <ClientRouter />
   </head>
-  <slot />
+  <body>
+    <Nav />
+    <main
+      id="main-content"
+      class="max-w-(--breakpoint-xl) px-8 grow"
+      tabindex="-1"
+    >
+      <slot />
+    </main>
+    <Footer />
+  </body>
 </html>
+
+<style>
+  body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    > * {
+      width: 100%;
+      margin-inline: auto;
+    }
+  }
+</style>
