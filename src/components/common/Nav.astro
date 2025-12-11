@@ -1,0 +1,100 @@
+---
+import {
+  Astronav,
+  CloseIcon,
+  MenuIcon,
+  MenuItems,
+  OpenIcon,
+} from "astro-navbar";
+import { Icon } from "astro-icon/components";
+import { getLanguageFromURL, useUIStrings } from "@/utils/uiTranslation";
+
+const lang = getLanguageFromURL(Astro.url);
+const t = useUIStrings(lang);
+---
+
+<header>
+  <!-- Skip to main content -->
+  <a href="#main-content" id="skip-content">{t("common.skip-to-content")}</a>
+  <Astronav>
+    <div class="heading">
+      <div class="flex justify-between grow">
+        <a class="text-xl font-bold font-baijamjuree text-nowrap" href="/"
+          >{t("common.name")}</a
+        >
+        <div class="grid place-content-center md:hidden">
+          <MenuIcon>
+            <OpenIcon>
+              <Icon
+                name="untitled/menu-01"
+                class="w-6 h-6 text-text-primary cursor-pointer"
+              />
+            </OpenIcon>
+            <CloseIcon>
+              <Icon
+                name="untitled/x-close"
+                class="w-6 h-6 text-text-primary cursor-pointer"
+              />
+            </CloseIcon>
+          </MenuIcon>
+        </div>
+      </div>
+      <div class="flex items-center justify-end-safe">
+        <MenuItems
+          class="hidden md:flex main-navigation"
+          aria-label={t("aria.main-navigation")}
+        >
+          <ul>
+            <li>
+              <a class="navigation-button" href="/about">{t("nav.about")}</a>
+            </li>
+            <li>
+              <a class="navigation-button" href="/">{t("nav.blog")}</a>
+            </li>
+            <li>
+              <a class="navigation-button" class="navigation-button" href="/"
+                >{t("nav.til")}</a
+              >
+            </li>
+          </ul>
+        </MenuItems>
+      </div>
+    </div>
+  </Astronav>
+</header>
+
+<style>
+  @reference "tailwindcss";
+  @reference "@/styles/globals.css";
+
+  #skip-content {
+    @apply not-focus-visible:sr-only;
+    @apply p-3 text-text-brand-primary bg-bg-primary;
+    @apply absolute top-0 left-0;
+  }
+
+  .heading {
+    @apply max-w-(--break-pont-xl) px-8 py-4;
+    @apply flex flex-col;
+    @apply md:flex-row md:justify-between md:items-center;
+  }
+
+  .main-navigation {
+    ul {
+      @apply flex flex-col gap-y-4 items-end;
+      @apply md:flex-row;
+
+      li {
+      }
+    }
+  }
+
+  .navigation-button {
+    @apply px-3 py-2 m-0.5;
+    @apply cursor-pointer;
+    @apply font-semibold font-baijamjuree;
+    @apply text-text-secondary hover:text-text-secondary_hover;
+    @apply bg-bg-primary hover:bg-bg-primary_hover;
+    @apply rounded-md;
+  }
+</style>

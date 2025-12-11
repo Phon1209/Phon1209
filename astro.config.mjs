@@ -6,6 +6,8 @@ import tailwindcss from "@tailwindcss/vite";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 
+import icon from "astro-icon";
+
 // https://astro.build/config
 export default defineConfig({
   vite: {
@@ -13,5 +15,5 @@ export default defineConfig({
   },
   site: "https://your-domain.com",
   trailingSlash: "never",
-  integrations: [mdx(), sitemap()],
+  integrations: [mdx(), sitemap(), icon()],
 });
