@@ -1,9 +1,15 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getLanguageFromURL, useUIStrings } from "@/utils/uiTranslation";
+
+const lang = getLanguageFromURL(Astro.url);
+const t = useUIStrings(lang);
 ---
 
 <BaseLayout>
   <body>
-    <h1>Astro</h1>
+    <h1 class="text-display-xl font-bold font-kanit">
+      {t("common.name")}
+    </h1>
   </body>
 </BaseLayout>
