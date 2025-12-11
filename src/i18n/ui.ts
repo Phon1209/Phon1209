@@ -17,6 +17,9 @@ export const Metadata = {
 
 export const UIStrings = {
   en: {
+    // variable
+    "var.host": "IDK yet",
+
     // common
     "common.name": "Patiphon Loetsuthakun",
     "common.short-bio": "bio",
@@ -31,11 +34,12 @@ export const UIStrings = {
     "nav.til": "TIL",
 
     // footer
-    "footer.copy": "© 2025 - Today {name}. All rights reserved.",
-    "footer.made_with": "Made with Astro and hosted on Somewhere.",
+    "footer.copy": "© Patiphon Loetsuthakun 2025 - Today. ",
+    "footer.rights": "All rights reserved.",
+    "footer.made_with": "Made with Astro and hosted on {host}.",
     "footer.disclaimer":
       "No Large Language Models(LLMs) where used to create any part of the content on this site.",
-    "footer.contact": "Find me more on",
+    "footer.contact": "Follow me elsewhere",
     "footer.github": "GitHub",
     "footer.facebook": "Facebook",
 

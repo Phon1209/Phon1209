@@ -1,0 +1,56 @@
+---
+import { getLanguageFromURL, useUIStrings } from "@/utils/uiTranslation";
+
+const lang = getLanguageFromURL(Astro.url);
+const t = useUIStrings(lang);
+---
+
+<footer>
+  <section id="socials-section" class="space-y-3">
+    <h2 id="socials" class="text-md font-bold font-baijamjuree">
+      {t("footer.contact")}
+    </h2>
+    <ul aria-labelledby="socials" class="flex gap-x-8">
+      <li>
+        <a href="https://github.com/Phon1209">{t("footer.github")}</a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/phon.patiphon1209"
+          >{t("footer.facebook")}</a
+        >
+      </li>
+    </ul>
+  </section>
+  <div class="copyrights">
+    <div>
+      <p>
+        {
+          t("footer.made_with", {
+            host: t("var.host"),
+          })
+        }
+      </p>
+      <p>
+        {t("footer.disclaimer")}
+      </p>
+    </div>
+    <p>{t("footer.copy")}<span class="font-bold">{t("footer.rights")}</span></p>
+  </div>
+</footer>
+
+<style>
+  @reference "tailwindcss";
+  @reference "@/styles/globals.css";
+  footer {
+    @apply px-8 py-10 max-w-(--breakpoint-xl) mx-auto;
+    @apply flex flex-col lg:flex-row-reverse lg:justify-between gap-8;
+
+    .copyrights {
+      @apply space-y-3;
+    }
+
+    #socials-section {
+      @apply lg:mx-12;
+    }
+  }
+</style>

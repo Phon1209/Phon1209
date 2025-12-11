@@ -1,15 +1,20 @@
 ---
 import Nav from "@/components/common/Nav.astro";
+import Footer from "@/components/common/Footer.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
-  <body>
+  <body class="flex flex-col min-h-screen">
     <Nav />
-    <main id="main-content" tabindex="-1">
+    <main
+      id="main-content"
+      class="max-w-(--breakpoint-xl) mx-auto px-8"
+      tabindex="-1"
+    >
       <!-- <h1>Phon1209</h1> -->
       <a href="/">test link</a>
     </main>
-    <footer></footer>
+    <Footer />
   </body>
 </BaseLayout>
