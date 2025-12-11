@@ -1,0 +1,33 @@
+---
+import { getLanguageFromURL, useMetadata } from "@/utils/uiTranslation";
+import BaseHead from "../components/base/BaseHeading.astro";
+import { ClientRouter } from "astro:transitions";
+
+export type Meta = {
+  title: string;
+  description: string;
+};
+
+type Props = {
+  meta?: Meta;
+};
+
+const metaTranslation = useMetadata(getLanguageFromURL(Astro.url));
+const defaultMeta: Meta = {
+  title: metaTranslation("title"),
+  description: metaTranslation("description"),
+};
+
+const { meta = defaultMeta } = Astro.props;
+const { title, description } = meta;
+const image = metaTranslation("ogImage");
+---
+
+<!doctype html>
+<html lang="th" class="bg-bg-primary">
+  <head>
+    <BaseHead {title} {description} {image} />
+    <ClientRouter />
+  </head>
+  <slot />
+</html>

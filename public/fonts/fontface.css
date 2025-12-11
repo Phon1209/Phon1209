@@ -1,0 +1,161 @@
+/* bai-jamjuree-500 - latin_thai */
+@font-face {
+  font-display: swap;
+  font-family: "Bai-jamjuree";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/bai-jamjuree-500.woff2") format("woff2");
+}
+
+/* bai-jamjuree-500italic - latin_thai */
+@font-face {
+  font-display: swap;
+  font-family: "Bai-jamjuree";
+  font-style: italic;
+  font-weight: 500;
+  src: url("/fonts/bai-jamjuree-500italic.woff2") format("woff2");
+}
+
+/* bai-jamjuree-600 - latin_thai */
+@font-face {
+  font-display: swap;
+  font-family: "Bai-jamjuree";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/bai-jamjuree-600.woff2") format("woff2");
+}
+
+/* bai-jamjuree-600italic - latin_thai */
+@font-face {
+  font-display: swap;
+  font-family: "Bai-jamjuree";
+  font-style: italic;
+  font-weight: 600;
+  src: url("/fonts/bai-jamjuree-600italic.woff2") format("woff2");
+}
+
+/* bai-jamjuree-700 - latin_thai */
+@font-face {
+  font-display: swap;
+  font-family: "Bai-jamjuree";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/bai-jamjuree-700.woff2") format("woff2");
+}
+
+/* bai-jamjuree-700italic - latin_thai */
+@font-face {
+  font-display: swap;
+  font-family: "Bai-jamjuree";
+  font-style: italic;
+  font-weight: 700;
+  src: url("/fonts/bai-jamjuree-700italic.woff2") format("woff2");
+}
+
+/* bai-jamjuree-italic - latin_thai */
+@font-face {
+  font-display: swap;
+  font-family: "Bai-jamjuree";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/fonts/bai-jamjuree-italic.woff2") format("woff2");
+}
+
+/* bai-jamjuree-regular - latin_thai */
+@font-face {
+  font-display: swap;
+  font-family: "Bai-jamjuree";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/bai-jamjuree-regular.woff2") format("woff2");
+}
+
+/* FiraCode-Bold - latin_thai */
+@font-face {
+  font-display: swap;
+  font-family: "Firacode";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/FiraCode-Bold.woff2") format("woff2");
+}
+
+/* FiraCode-Medium - latin_thai */
+@font-face {
+  font-display: swap;
+  font-family: "Firacode";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/FiraCode-Medium.woff2") format("woff2");
+}
+
+/* FiraCode-Regular - latin_thai */
+@font-face {
+  font-display: swap;
+  font-family: "Firacode";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/FiraCode-Regular.woff2") format("woff2");
+}
+
+/* FiraCode-SemiBold - latin_thai */
+@font-face {
+  font-display: swap;
+  font-family: "Firacode";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/FiraCode-SemiBold.woff2") format("woff2");
+}
+
+/* noto-sans-thai-500 - latin_thai */
+@font-face {
+  font-display: swap;
+  font-family: "Noto-sans-thai";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/noto-sans-thai-500.woff2") format("woff2");
+}
+
+/* noto-sans-thai-600 - latin_thai */
+@font-face {
+  font-display: swap;
+  font-family: "Noto-sans-thai";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/noto-sans-thai-600.woff2") format("woff2");
+}
+
+/* noto-sans-thai-700 - latin_thai */
+@font-face {
+  font-display: swap;
+  font-family: "Noto-sans-thai";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/noto-sans-thai-700.woff2") format("woff2");
+}
+
+/* noto-sans-thai-800 - latin_thai */
+@font-face {
+  font-display: swap;
+  font-family: "Noto-sans-thai";
+  font-style: normal;
+  font-weight: 800;
+  src: url("/fonts/noto-sans-thai-800.woff2") format("woff2");
+}
+
+/* noto-sans-thai-900 - latin_thai */
+@font-face {
+  font-display: swap;
+  font-family: "Noto-sans-thai";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/fonts/noto-sans-thai-900.woff2") format("woff2");
+}
+
+/* noto-sans-thai-regular - latin_thai */
+@font-face {
+  font-display: swap;
+  font-family: "Noto-sans-thai";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/noto-sans-thai-regular.woff2") format("woff2");
+}

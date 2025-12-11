@@ -1,0 +1,166 @@
+{
+  "nav": {
+    "item": {
+      "button": {
+        "icon": {
+          "fg": "rgba(var(--nav-item-button-icon-fg), <alpha-value>)",
+          "fg_active": "rgba(var(--nav-item-button-icon-fg_active), <alpha-value>)"
+        }
+      },
+      "icon": {
+        "fg": "rgba(var(--nav-item-icon-fg), <alpha-value>)",
+        "fg_active": "rgba(var(--nav-item-icon-fg_active), <alpha-value>)"
+      }
+    }
+  },
+  "button": {
+    "primary": {
+      "bg": "rgba(var(--button-primary-bg), <alpha-value>)",
+      "bg_hover": "rgba(var(--button-primary-bg_hover), <alpha-value>)",
+      "border": "rgba(var(--button-primary-border), <alpha-value>)",
+      "border_hover": "rgba(var(--button-primary-border_hover), <alpha-value>)",
+      "fg": "rgba(var(--button-primary-fg), <alpha-value>)",
+      "fg_hover": "rgba(var(--button-primary-fg_hover), <alpha-value>)",
+      "error": {
+        "bg": "rgba(var(--button-primary-error-bg), <alpha-value>)",
+        "bg_hover": "rgba(var(--button-primary-error-bg_hover), <alpha-value>)",
+        "border": "rgba(var(--button-primary-error-border), <alpha-value>)",
+        "border_hover": "rgba(var(--button-primary-error-border_hover), <alpha-value>)",
+        "fg": "rgba(var(--button-primary-error-fg), <alpha-value>)",
+        "fg_hover": "rgba(var(--button-primary-error-fg_hover), <alpha-value>)"
+      }
+    },
+    "secondary": {
+      "bg": "rgba(var(--button-secondary-bg), <alpha-value>)",
+      "bg_hover": "rgba(var(--button-secondary-bg_hover), <alpha-value>)",
+      "border": "rgba(var(--button-secondary-border), <alpha-value>)",
+      "border_hover": "rgba(var(--button-secondary-border_hover), <alpha-value>)",
+      "fg": "rgba(var(--button-secondary-fg), <alpha-value>)",
+      "fg_hover": "rgba(var(--button-secondary-fg_hover), <alpha-value>)",
+      "color": {
+        "bg": "rgba(var(--button-secondary-color-bg), <alpha-value>)",
+        "bg_hover": "rgba(var(--button-secondary-color-bg_hover), <alpha-value>)",
+        "border": "rgba(var(--button-secondary-color-border), <alpha-value>)",
+        "border_hover": "rgba(var(--button-secondary-color-border_hover), <alpha-value>)",
+        "fg": "rgba(var(--button-secondary-color-fg), <alpha-value>)",
+        "fg_hover": "rgba(var(--button-secondary-color-fg_hover), <alpha-value>)"
+      },
+      "error": {
+        "bg": "rgba(var(--button-secondary-error-bg), <alpha-value>)",
+        "bg_hover": "rgba(var(--button-secondary-error-bg_hover), <alpha-value>)",
+        "border": "rgba(var(--button-secondary-error-border), <alpha-value>)",
+        "border_hover": "rgba(var(--button-secondary-error-border_hover), <alpha-value>)",
+        "fg": "rgba(var(--button-secondary-error-fg), <alpha-value>)",
+        "fg_hover": "rgba(var(--button-secondary-error-fg_hover), <alpha-value>)"
+      }
+    },
+    "tertiary": {
+      "bg_hover": "rgba(var(--button-tertiary-bg_hover), <alpha-value>)",
+      "fg": "rgba(var(--button-tertiary-fg), <alpha-value>)",
+      "fg_hover": "rgba(var(--button-tertiary-fg_hover), <alpha-value>)",
+      "color": {
+        "bg_hover": "rgba(var(--button-tertiary-color-bg_hover), <alpha-value>)",
+        "fg": "rgba(var(--button-tertiary-color-fg), <alpha-value>)",
+        "fg_hover": "rgba(var(--button-tertiary-color-fg_hover), <alpha-value>)"
+      },
+      "error": {
+        "bg_hover": "rgba(var(--button-tertiary-error-bg_hover), <alpha-value>)",
+        "fg": "rgba(var(--button-tertiary-error-fg), <alpha-value>)",
+        "fg_hover": "rgba(var(--button-tertiary-error-fg_hover), <alpha-value>)"
+      }
+    }
+  },
+  "footer": {
+    "badge": {
+      "bg": "rgba(var(--footer-badge-bg), <alpha-value>)",
+      "border": "rgba(var(--footer-badge-border), <alpha-value>)",
+      "fg": "rgba(var(--footer-badge-fg), <alpha-value>)"
+    },
+    "button": {
+      "fg": "rgba(var(--footer-button-fg), <alpha-value>)",
+      "fg_hover": "rgba(var(--footer-button-fg_hover), <alpha-value>)"
+    }
+  },
+  "header": {
+    "abstract": {
+      "100": {
+        "bg": "rgba(var(--header-abstract-100-bg), <alpha-value>)"
+      },
+      "200": {
+        "bg": "rgba(var(--header-abstract-200-bg), <alpha-value>)"
+      },
+      "300": {
+        "bg": "rgba(var(--header-abstract-300-bg), <alpha-value>)"
+      },
+      "50": {
+        "bg": "rgba(var(--header-abstract-50-bg), <alpha-value>)"
+      }
+    }
+  },
+  "utility": {
+    "brand": {
+      "100": "rgba(var(--utility-brand-100), <alpha-value>)",
+      "100_alt": "rgba(var(--utility-brand-100_alt), <alpha-value>)",
+      "50": "rgba(var(--utility-brand-50), <alpha-value>)",
+      "200": "rgba(var(--utility-brand-200), <alpha-value>)",
+      "200_alt": "rgba(var(--utility-brand-200_alt), <alpha-value>)",
+      "300": "rgba(var(--utility-brand-300), <alpha-value>)",
+      "300_alt": "rgba(var(--utility-brand-300_alt), <alpha-value>)",
+      "400": "rgba(var(--utility-brand-400), <alpha-value>)",
+      "400_alt": "rgba(var(--utility-brand-400_alt), <alpha-value>)",
+      "500": "rgba(var(--utility-brand-500), <alpha-value>)",
+      "500_alt": "rgba(var(--utility-brand-500_alt), <alpha-value>)",
+      "50_alt": "rgba(var(--utility-brand-50_alt), <alpha-value>)",
+      "600": "rgba(var(--utility-brand-600), <alpha-value>)",
+      "600_alt": "rgba(var(--utility-brand-600_alt), <alpha-value>)",
+      "700": "rgba(var(--utility-brand-700), <alpha-value>)",
+      "700_alt": "rgba(var(--utility-brand-700_alt), <alpha-value>)",
+      "800": "rgba(var(--utility-brand-800), <alpha-value>)",
+      "800_alt": "rgba(var(--utility-brand-800_alt), <alpha-value>)",
+      "900": "rgba(var(--utility-brand-900), <alpha-value>)",
+      "900_alt": "rgba(var(--utility-brand-900_alt), <alpha-value>)"
+    },
+    "error": {
+      "50": "rgba(var(--utility-error-50), <alpha-value>)",
+      "100": "rgba(var(--utility-error-100), <alpha-value>)",
+      "200": "rgba(var(--utility-error-200), <alpha-value>)",
+      "300": "rgba(var(--utility-error-300), <alpha-value>)",
+      "400": "rgba(var(--utility-error-400), <alpha-value>)",
+      "500": "rgba(var(--utility-error-500), <alpha-value>)",
+      "600": "rgba(var(--utility-error-600), <alpha-value>)",
+      "700": "rgba(var(--utility-error-700), <alpha-value>)"
+    },
+    "gray": {
+      "50": "rgba(var(--utility-gray-50), <alpha-value>)",
+      "100": "rgba(var(--utility-gray-100), <alpha-value>)",
+      "200": "rgba(var(--utility-gray-200), <alpha-value>)",
+      "300": "rgba(var(--utility-gray-300), <alpha-value>)",
+      "400": "rgba(var(--utility-gray-400), <alpha-value>)",
+      "500": "rgba(var(--utility-gray-500), <alpha-value>)",
+      "600": "rgba(var(--utility-gray-600), <alpha-value>)",
+      "700": "rgba(var(--utility-gray-700), <alpha-value>)",
+      "800": "rgba(var(--utility-gray-800), <alpha-value>)",
+      "900": "rgba(var(--utility-gray-900), <alpha-value>)"
+    },
+    "success": {
+      "50": "rgba(var(--utility-success-50), <alpha-value>)",
+      "100": "rgba(var(--utility-success-100), <alpha-value>)",
+      "200": "rgba(var(--utility-success-200), <alpha-value>)",
+      "300": "rgba(var(--utility-success-300), <alpha-value>)",
+      "400": "rgba(var(--utility-success-400), <alpha-value>)",
+      "500": "rgba(var(--utility-success-500), <alpha-value>)",
+      "600": "rgba(var(--utility-success-600), <alpha-value>)",
+      "700": "rgba(var(--utility-success-700), <alpha-value>)"
+    },
+    "warning": {
+      "50": "rgba(var(--utility-warning-50), <alpha-value>)",
+      "100": "rgba(var(--utility-warning-100), <alpha-value>)",
+      "200": "rgba(var(--utility-warning-200), <alpha-value>)",
+      "300": "rgba(var(--utility-warning-300), <alpha-value>)",
+      "400": "rgba(var(--utility-warning-400), <alpha-value>)",
+      "500": "rgba(var(--utility-warning-500), <alpha-value>)",
+      "600": "rgba(var(--utility-warning-600), <alpha-value>)",
+      "700": "rgba(var(--utility-warning-700), <alpha-value>)"
+    }
+  }
+}
