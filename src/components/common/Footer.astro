@@ -5,9 +5,9 @@ const lang = getLanguageFromURL(Astro.url);
 const t = useUIStrings(lang);
 ---
 
-<footer>
+<footer class="text-sm md:text-md">
   <section id="socials-section" class="space-y-3">
-    <h2 id="socials" class="text-md font-bold font-baijamjuree">
+    <h2 id="socials" class="font-bold font-baijamjuree">
       {t("footer.contact")}
     </h2>
     <ul aria-labelledby="socials" class="flex gap-x-8">

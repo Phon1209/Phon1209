@@ -8,13 +8,23 @@ const t = useUIStrings(lang);
 ---
 
 <BaseLayout>
-  <section class="flex gap-2">
-    <div>
-      <h1 class="text-display-xl font-bold font-kanit">{t("common.name")}</h1>
-      <p class="text-md font-baijamjuree">{t("common.short-bio")}</p>
-    </div>
-    <div>
-      <img src="" alt="" />
+  <section class="grow grid place-content-center my-8">
+    <div class="flex flex-col md:flex-row gap-8">
+      <div class="basis-0 grow-[3] flex flex-col justify-center">
+        <h1 class="text-display-lg md:text-display-xl font-bold font-kanit">
+          {t("common.name")}
+        </h1>
+        <p class="text-sm md:text-md font-baijamjuree">
+          {t("common.short-bio")}
+        </p>
+      </div>
+      <div class="basis-0 grow grid place-content-center-safe p-8 md:p-2">
+        <img
+          src="/images/profile.png"
+          alt={t("alt.profile-picture")}
+          class="rounded-full"
+        />
+      </div>
     </div>
   </section>
 </BaseLayout>
