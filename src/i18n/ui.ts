@@ -19,6 +19,7 @@ export const UIStrings = {
   en: {
     // variable
     "var.host": "IDK yet",
+    "var.til_original": "https://emasuriano.com/til/",
 
     // common
     "common.name": "Patiphon Loetsuthakun",
@@ -43,6 +44,18 @@ export const UIStrings = {
     "footer.contact": "Follow me elsewhere",
     "footer.github": "GitHub",
     "footer.facebook": "Facebook",
+
+    // About Pages
+    "about.title": "About Me",
+    "about.long_bio": "",
+
+    // TIL
+    "til.title": "Today I learned",
+    "til.description": `A collection of short notes/write-ups on what I learn day to day. These are things I think it’s useful but not enough to be a blog post. It will usually be something in the topic of my interest.`,
+    "til.topic_of_interest": "\nSee the topic of my interest from the ",
+    "til.stole_idea": "\nI stole this idea from ",
+    "til.about_page": "about page",
+    "til.original_idea": "Ema Suriano's TIL",
 
     // Aria labels
     "aria.main-navigation": "Main Navigation",

@@ -1,0 +1,46 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { groupedByYear } from "@/utils/til";
+import { getLanguageFromURL, useUIStrings } from "@/utils/uiTranslation";
+import { getCollection } from "astro:content";
+
+const lang = getLanguageFromURL(Astro.url);
+const t = useUIStrings(lang);
+
+const tilCollection = groupedByYear(await getCollection("til"));
+console.log(tilCollection);
+---
+
+<BaseLayout>
+  <section class="space-y-8 my-8">
+    <header class="basis-0 grow-[3] flex flex-col justify-center">
+      <h1 class="text-display-lg md:text-display-xl font-bold font-kanit">
+        {t("til.title")}
+      </h1>
+      <div class="text-sm md:text-md font-baijamjuree whitespace-pre-line">
+        <p>
+          {t("til.description")}
+        </p>
+        <p>
+          {t("til.topic_of_interest")}<a href="/about">{t("til.about_page")}</a>
+        </p>
+        <p>
+          {t("til.stole_idea")}<a href="/about">{t("til.original_idea")}</a>
+        </p>
+      </div>
+    </header>
+    {
+      tilCollection.map((yearCollection) => (
+        <section>
+          <h2>{yearCollection.year}</h2>
+          {yearCollection.tils.map((article) => (
+            <article>
+              {article.data.title}
+              {article.data.date}
+            </article>
+          ))}
+        </section>
+      ))
+    }
+  </section>
+</BaseLayout>
